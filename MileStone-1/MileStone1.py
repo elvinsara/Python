@@ -16,10 +16,10 @@ def word_count(data):
 
 
 try:
-    with open("novel.txt", "r", encoding="utf8") as file:
+    with open("novel.csv", "r", encoding="utf8") as file:
         file_data = file.read()
 except FileNotFoundError:
-    print("'novel.txt' file not found.")
+    print("'novel.csv' file not found.")
 
 word_data = word_filter(file_data)
 word_count_data = word_count(word_data)
